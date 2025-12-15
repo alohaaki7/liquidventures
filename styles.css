@@ -1122,8 +1122,25 @@ button {
     margin-bottom: 60px;
   }
 
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+
   .service-card {
     padding: 20px;
+  }
+
+  .service-desc {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+  }
+
+  .service-list li {
+    font-size: 0.75rem;
+  }
+
+  .project-desc {
+    font-size: 0.8125rem;
   }
 
   .stat {
@@ -1131,12 +1148,21 @@ button {
   }
 
   .stat-number {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
   }
 
   .about-grid {
     gap: 40px;
     margin-bottom: 60px;
+  }
+
+  .about-text p {
+    font-size: 0.875rem;
+    line-height: 1.7;
   }
 
   .process-step {
@@ -1145,6 +1171,18 @@ button {
 
   .step-content {
     padding-bottom: 32px;
+  }
+
+  .step-content p {
+    font-size: 0.8125rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
   }
 }
 
