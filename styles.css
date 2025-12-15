@@ -278,7 +278,7 @@ button {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .nav-links {
     display: block;
   }
@@ -360,7 +360,7 @@ button {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .mobile-menu-btn {
     display: none;
   }
@@ -578,27 +578,18 @@ button {
 /* Portfolio Grid */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-@media (min-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .project-card-large {
-    grid-column: span 2;
-  }
+.project-card-large {
+  grid-column: span 2;
 }
 
 @media (min-width: 1024px) {
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .project-card-large {
-    grid-column: span 2;
+    gap: 24px;
   }
 }
 
@@ -731,19 +722,14 @@ button {
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 @media (min-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
   }
 }
 
@@ -809,16 +795,16 @@ button {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+  align-items: start;
 }
 
 @media (min-width: 1024px) {
   .about-grid {
     grid-template-columns: 1.2fr 0.8fr;
     gap: 80px;
-    align-items: start;
   }
 }
 
@@ -1117,35 +1103,48 @@ button {
 
 @media (max-width: 768px) {
   .portfolio {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 
   .services {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 
   .about {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 
   .contact {
-    padding: 80px 0 60px;
+    padding: 100px 0 60px;
   }
 
   .section-header {
-    margin-bottom: 48px;
+    margin-bottom: 60px;
   }
 
-  .about-stats {
-    gap: 16px;
+  .service-card {
+    padding: 20px;
   }
 
   .stat {
-    padding: 24px 16px;
+    padding: 20px 12px;
   }
 
   .stat-number {
-    font-size: 2.25rem;
+    font-size: 2rem;
+  }
+
+  .about-grid {
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .process-step {
+    gap: 16px;
+  }
+
+  .step-content {
+    padding-bottom: 32px;
   }
 }
 
